@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="companyName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入公司名称</message>
+		</field-validator>
+	</field>
+	<!-- If the file is null, use the previous one
+	<field name="file">
+		<field-validator type="required">
+			<param name="trim">true</param>
+			<message>请选择公司图片</message>
+		</field-validator>
+	</field>
+	<field name="companyDesc">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入公司描述</message>
+		</field-validator>
+	</field>
+	-->
+	<field name="businessScope">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入经营范围</message>
+		</field-validator>
+	</field>
+	<!--
+	<field name="companyAddress">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入公司地址</message>
+		</field-validator>
+	</field>
+	-->
+	<field name="shopLocation">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入商铺位置</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入公司固定电话</message>
+		</field-validator>
+	</field>
+	<field name="categoryId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请选择经营类别</message>
+		</field-validator>
+	</field>
+</validators>

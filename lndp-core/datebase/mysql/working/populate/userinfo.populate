@@ -1,0 +1,12 @@
+
+delete from userinfo;
+
+INSERT INTO userinfo(user_id, username, password, user_type) 
+values('1', 'admin', 'ce6f4d84f259ee07a35045f61e555987', 'ADMIN');
+
+INSERT INTO userinfo(user_id, username, password, user_type) 
+values('2', 'user', '3ca792ac2f6211fda35045f61e555987', 'NORMAL');
+
+select * from userinfo;
+
+describe userinfo;

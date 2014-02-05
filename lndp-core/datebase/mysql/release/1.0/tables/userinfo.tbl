@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS userinfo;
+
+CREATE TABLE userinfo (
+	user_id  varchar(50),
+	username varchar(50),
+	password varchar(50),
+	user_type varchar(50)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

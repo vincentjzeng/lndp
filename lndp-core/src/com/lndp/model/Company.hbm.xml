@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-mapping PUBLIC    
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"    
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping package="com.lndp.model">
+	<class name="Company" table="company">
+		<id name="companyId" column="company_id" type="java.lang.String">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="companyName" column="company_name" type="java.lang.String" not-null="true" /> 
+		<property name="companyPicUrl" column="company_pic_url" type="java.lang.String" not-null="false" />
+		<property name="companyDesc" column="company_desc" type="java.lang.String" not-null="false" />
+		<property name="companyAddress" column="company_address" type="java.lang.String" not-null="false" />
+		<property name="shopLocation" column="shop_location" type="java.lang.String" not-null="true" />
+		<property name="phone" column="phone" type="java.lang.String" not-null="true" />
+		<property name="mobile" column="mobile" type="java.lang.String" not-null="false" />
+		<property name="fax" column="fax" type="java.lang.String" not-null="false" />
+		<property name="email" column="email" type="java.lang.String" not-null="false" />
+		<property name="contactPerson" column="contact_person" type="java.lang.String" not-null="false" />
+		<property name="qq" column="qq" type="java.lang.String" not-null="false" />
+		<property name="msn" column="msn" type="java.lang.String" not-null="false" />
+		<property name="aliTalk" column="ali_talk" type="java.lang.String" not-null="false" />
+		<property name="googleTalk" column="google_talk" type="java.lang.String" not-null="false" />
+		<property name="im" column="im" type="java.lang.String" not-null="false" />
+		<property name="websiteAddress" column="website_address" type="java.lang.String" not-null="false" />
+		<property name="taobao" column="taobao" type="java.lang.String" not-null="false" />
+		<property name="businessScope" column="business_scope" type="java.lang.String" not-null="true" />
+		<property name="recommendRate" column="recommend_rate" type="java.lang.Integer" not-null="true" />
+		<property name="remark" column="remark" type="java.lang.String" not-null="false" />
+		<property name="updatedUser" column="updated_user" type="java.lang.String" not-null="true" />
+		<property name="updatedTime" column="updated_time" type="java.util.Date" not-null="true" />
+		<property name="clickCount" column="click_count" type="java.lang.Double" not-null="false" />
+		<property name="categoryId" column="category_id" type="java.lang.String" not-null="true" />
+		 
+	</class>
+</hibernate-mapping>   

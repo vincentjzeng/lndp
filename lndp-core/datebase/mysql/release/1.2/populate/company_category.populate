@@ -1,0 +1,17 @@
+
+delete from company_category;
+
+INSERT INTO company_category(category_id, category_name, category_level) 
+values('1', '手机', 1);
+INSERT INTO company_category(category_id, category_name, category_level) 
+values('2', '手机配件', 1);
+INSERT INTO company_category(category_id, category_name, category_level) 
+values('3', '电玩配件', 1);
+INSERT INTO company_category(category_id, category_name, category_level) 
+values('4', '数码电器产品', 1);
+INSERT INTO company_category(category_id, category_name, category_level) 
+values('5', '其他', 1);
+
+select * from company_category;
+
+describe company_category;

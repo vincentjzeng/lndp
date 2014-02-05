@@ -1,0 +1,11 @@
+1. How to udpate the footer ad
+a. login to http://www.alimama.com/ with vincentellan (Taobal account) and make to ad
+b. Update the ad.properties to the target ad
+c. restart lndp to make the ad taking effect.
+
+2. How to deploy/redeploy lndp
+a. Backup all the config files in the common classes folder "common\classes" of Tomcat.
+b. Backup the project folder "lndp\userfiles"
+c. Backup the project "common"
+d. Backup DB.
+e. Redeply DB, common and lndp projects.

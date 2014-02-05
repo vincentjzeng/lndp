@@ -1,0 +1,54 @@
+DROP TABLE IF EXISTS company_bak;
+
+Create TABLE company_bak (Select * from company);
+
+DROP TABLE IF EXISTS company;
+
+CREATE TABLE company (
+	company_id  varchar(50),
+	company_name varchar(50),
+	company_pic_url varchar(500),
+	company_desc varchar(15000),
+	company_address varchar(200),
+	shop_location varchar(200),
+	phone varchar(50),
+	mobile varchar(50),
+	fax varchar(50),
+	email varchar(50),
+	contact_person varchar(50),
+	qq varchar(30),
+	msn varchar(50),
+	ali_talk varchar(50),
+	google_talk varchar(50),
+	im varchar(100),
+	website_address varchar(50),
+	taobao varchar(50),
+	business_scope varchar(100),
+	recommend_rate int,
+	remark varchar(200),
+	category_id varchar(50),
+	click_count double,
+	updated_user varchar(50),
+	updated_time datetime
+)  (Select 
+	company_id,
+	company_name,
+	company_pic_url,
+	company_desc,
+	company_address,
+	shop_location,
+	phone,
+	mobile,
+	fax,
+	email,
+	im,
+	website_address,
+	business_scope,
+	recommend_rate,
+	remark,
+	category_id,
+	click_count,
+	updated_user,
+	updated_time
+ from company_bak) 
+

@@ -1,0 +1,25 @@
+localhost development server Acer-4710
+
+Tomcat 5.5
+Port: 8080
+
+Apache Tomcat 
+Apache Tomcat version 5.5 implements the Servlet 2.4 
+and JavaServer Pages 2.0 specifications from the Java Community Process, 
+and includes many additional features that make it a useful platform for developing 
+and deploying web applications and web services.
+
+MySQL 5.1
+Port: 3306
+Admin PWD: MnisND.!
+database name: LNDP_MAIN_ALL
+
+
+Struts2
+ Apache Struts 2 requires:
+
+    * Servlet API 2.4
+    * JSP API 2.0
+    * Java 5
+
+An alternate set of JARs for Java 4 are also available. See the "J4" distribution. 

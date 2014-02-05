@@ -1,0 +1,17 @@
+#Tue Jul 12 22:59:52 CST 2011
+eclipse.preferences.version=1
+encoding//WebContent/about/about_us.jsp=UTF-8
+encoding//WebContent/admin/admin_login.jsp=UTF-8
+encoding//WebContent/admin/common/footer.jsp=UTF-8
+encoding//WebContent/common/error.jsp=UTF-8
+encoding//WebContent/common/left_menu.jsp=UTF-8
+encoding//WebContent/common/success.jsp=UTF-8
+encoding//WebContent/company/company_menu.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//config/contact.properties=UTF-8
+encoding//config/displaytag.properties=UTF-8
+encoding//config/fckeditor.properties=UTF-8
+encoding//config/log4j.properties=UTF-8
+encoding//config/struts.properties=UTF-8
+encoding//datebase/mysql/working/populate/company_category.populate=UTF-8
+encoding//datebase/mysql/working/populate/userinfo.populate=UTF-8

@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS news;
+
+CREATE TABLE news (
+	news_id  varchar(50),
+	news_type varchar(50),
+	news_title varchar(50),
+	news_content varchar(20000),
+	click_count double,
+	updated_user varchar(50),
+	updated_time datetime
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

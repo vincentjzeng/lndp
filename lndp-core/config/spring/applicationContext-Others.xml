@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:spring/datasource-localhost.properties</value>
+				<!-- 
+				<value>classpath:spring/datasource-sq_lndigi.properties</value>
+				<value>classpath:spring/datasource-s218.properties</value>
+				 -->
+				 <value>classpath:spring/ad.properties</value>
+				 <value>classpath:spring/emap.properties</value>
+				 <value>classpath:spring/contact.properties</value>
+			</list>
+		</property>
+	</bean> 
+	
+	<!-- Footer ad bean -->
+	<bean id="footerAd"
+		class="com.lndp.model.Advertisement">
+		<property name="height">
+			<value>${footer.height}</value>
+		</property>
+		<property name="width">
+			<value>${footer.width}</value>
+		</property>
+		<property name="flashvars">
+			<value>${footer.flashvars}</value>
+		</property>
+		<property name="wmode">
+			<value>${footer.wmode}</value>
+		</property>
+		<property name="allowscriptaccess">
+			<value>${footer.allowscriptaccess}</value>
+		</property>
+		<property name="quality">
+			<value>${footer.quality}</value>
+		</property>
+		<property name="name">
+			<value>${footer.name}</value>
+		</property>
+		<property name="id">
+			<value>${footer.id}</value>
+		</property>
+		<property name="src">
+			<value>${footer.src}</value>
+		</property>
+		<property name="type">
+			<value>${footer.type}</value>
+		</property>
+	</bean> 
+	
+	<!-- e-map bean -->
+	<bean id="emap"
+		class="com.lndp.model.EMap">
+		<property name="scrolling">
+			<value>${emap.scrolling}</value>
+		</property>
+		<property name="frameborder">
+			<value>${emap.frameborder}</value>
+		</property>
+		<property name="style">
+			<value>${emap.style}</value>
+		</property>
+		<property name="src">
+			<value>${emap.src}</value>
+		</property>
+	</bean> 
+	
+	<!-- contact info bean -->
+	<bean id="contactInfo"
+		class="com.lndp.model.ContactInfo">
+		<property name="companyName">
+			<value>${contact.company_name}</value>
+		</property>
+		<property name="companyAddress">
+			<value>${contact.company_address}</value>
+		</property>
+		<property name="contactPersion">
+			<list>
+				<value>${contact.contact_persion_a}</value>
+			</list>
+		</property>
+		<property name="phone">
+			<list>
+				<value>${contact.phone_a}</value>
+				<value>${contact.phone_b}</value>
+			</list>
+		</property>
+		<property name="postalCode">
+			<value>${contact.postal_code}</value>
+		</property>
+		<property name="website">
+			<value>${contact.website}</value>
+		</property>
+		<property name="email">
+			<value>${contact.email}</value>
+		</property>
+	</bean> 
+	
+	<!--Set to AutoProxy-->
+	<!--
+	<bean id="autoProxyCreator"
+		class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" />
+	-->
+
+  	<!--ExceptionHandler-->
+  	<!--
+	<bean id="exceptionHandler" class="com.lndp.handler.ExceptionHandler" />
+	<bean id="exceptionHandlereAdvisor"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice">
+			<ref bean="exceptionHandler" />
+		</property>
+	-->
+        <!--method patterns-->
+    <!--
+		<property name="patterns">
+			<value>com\.lndp\.dao\.CompanyCategoryDAO\.findAll</value>
+		</property>
+	</bean>
+	-->
+	<!--TimeHandler-->
+	<!--
+	<bean id="timeHandler" class="com.lndp.handler.TimeHandler" />
+	<bean id="timeHandlerAdvisor"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice">
+			<ref bean="timeHandler" />
+		</property>
+	-->
+        <!--method patterns-->
+   <!--
+		<property name="patterns">
+			<value>com\.lndp\.dao\.CompanyCategoryDAO\.findAll</value>
+		</property>
+	</bean>
+	-->
+	
+</beans>

@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS company;
+
+CREATE TABLE company (
+	company_id  varchar(50),
+	company_name varchar(50),
+	company_pic_url varchar(500),
+	company_desc varchar(20000),
+	company_address varchar(200),
+	shop_location varchar(200),
+	phone varchar(50),
+	mobile varchar(50),
+	fax varchar(50),
+	email varchar(50),
+	im varchar(100),
+	website_address varchar(50),
+	business_scope varchar(100),
+	recommend_rate int,
+	remark varchar(200),
+	category_id varchar(50),
+	click_count double,
+	updated_user varchar(50),
+	updated_time datetime
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

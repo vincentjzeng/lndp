@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="newsType">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请选择信息类型</message>
+		</field-validator>
+	</field>
+	<field name="newsTitle">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入信息标题</message>
+		</field-validator>
+	</field>
+	<field name="newsContent">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入信息内容</message>
+		</field-validator>
+	</field>
+</validators>

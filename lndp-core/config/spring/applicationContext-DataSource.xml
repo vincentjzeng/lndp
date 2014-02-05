@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- Database source bean -->
+	<!--
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="jdbc:mysql://localhost:3306/lndp_main_all">
+		</property>
+		<property name="username" value="lndpalldev"></property>
+		<property name="password" value="zzzzzz0"></property>
+	</bean>
+	-->
+	
+	<!-- Database source with c3p0 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass">
+            <value>${jdbc.driver}</value>
+        </property>
+        <property name="jdbcUrl">
+            <value>${jdbc.url}</value>     
+        </property> 
+        <property name="user">
+			<value>${jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${jdbc.password}</value>
+		</property> 
+		<property name="acquireIncrement">
+			<value>${hibernate.c3p0.acquire_increment}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+			<value>${hibernate.c3p0.idle_test_period}</value>
+		</property>
+		<property name="maxIdleTime">
+			<value>${hibernate.c3p0..max_idle_time}</value>
+		</property> 
+		<property name="checkoutTimeout">
+			<value>${hibernate.c3p0.checkout_timeout}</value>
+		</property>
+		<property name="initialPoolSize">
+			<value>${hibernate.c3p0.initial_pool_size}</value>
+		</property>
+		<property name="minPoolSize">
+			<value>${hibernate.c3p0.min_size}</value>
+		</property>
+		<property name="maxPoolSize">
+			<value>${hibernate.c3p0.max_size}</value>
+		</property>
+		<property name="maxStatements">
+			<value>${hibernate.c3p0.max_statements}</value>
+		</property>
+    </bean>
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					${hibernate.dialect}
+    			</prop>
+				<prop key="hibernate.show_sql">
+					${hibernate.show_sql}
+                </prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/lndp/model/Userinfo.hbm.xml</value>
+				<value>com/lndp/model/News.hbm.xml</value>
+				<value>com/lndp/model/Company.hbm.xml</value>
+				<value>com/lndp/model/CompanyCategory.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+		
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<!DOCTYPE hibernate-mapping PUBLIC    
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"    
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+<hibernate-mapping package="com.lndp.model">
+	<class name="CompanyCategory" table="company_category">
+		<id name="categoryId" column="category_id" type="java.lang.String">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="categoryName" column="category_name" type="java.lang.String" not-null="true" /> 
+		<property name="categoryLevel" column="category_level" type="java.lang.String" not-null="true" />
+		 
+	</class>
+</hibernate-mapping>   

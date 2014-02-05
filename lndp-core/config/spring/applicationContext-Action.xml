@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- Userinfo action -->
+	<bean id="userinfoAction" class="com.lndp.action.UserinfoAction" scope="prototype"> 
+		<property name="service">
+			<ref bean="userinfoService" />
+		</property>
+	</bean>
+	
+	<bean id="securityMgrAction" class="com.lndp.action.SecurityManagerAction" scope="prototype"> 
+		<property name="securityManager">
+			<ref bean="securityManager" />
+		</property>
+	</bean>
+	
+	<!-- News admin action -->
+	<bean id="newsAdminAction" class="com.lndp.action.NewsAdminAction" scope="prototype">
+		<property name="service">
+			<ref bean="newsService" />
+		</property>
+	</bean>
+
+	<!-- News action -->
+	<bean id="newsAction" class="com.lndp.action.NewsAction" scope="prototype">
+		<property name="service">
+			<ref bean="newsService" />
+		</property>
+	</bean>
+	
+	<!-- Company admin action -->
+	<bean id="companyAdminAction" class="com.lndp.action.CompanyAdminAction" scope="prototype">
+		<property name="service">
+			<ref bean="companyService" />
+		</property>
+	</bean>
+
+	<!-- Company action -->
+	<bean id="companyAction" class="com.lndp.action.CompanyAction" scope="prototype">
+		<property name="service">
+			<ref bean="companyService" />
+		</property>
+	</bean>
+
+	
+</beans>

@@ -1,0 +1,10 @@
+[2010-09-19 23:48:52] [info] Running Service...
+[2010-09-19 23:48:52] [info] Starting service...
+[2010-09-19 23:48:54] [info] Service started in 1125 ms.
+[2010-10-03 00:08:52] [info] Console LOGOFF event signaled
+[2010-10-03 00:08:54] [info] Console LOGOFF event signaled
+[2010-10-03 00:10:17] [info] Console SHUTDOWN event signaled
+[2010-10-03 00:10:17] [info] Stopping service...
+[2010-10-03 00:10:19] [info] Service stopped.
+[2010-10-03 00:10:19] [info] Run service finished.
+[2010-10-03 00:10:19] [info] Procrun finished.

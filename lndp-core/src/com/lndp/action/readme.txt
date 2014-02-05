@@ -1,0 +1,1 @@
+This package will be stored for the Struts2 Action classes.

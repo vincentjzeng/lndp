@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="#system#;jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_23">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/lndp-lib/c3p0/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/displaytag-1.2/displaytag-1.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/displaytag-1.2/displaytag-export-poi-1.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/displaytag-1.2/displaytag-portlet-1.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/displaytag-1.2/itext-1.3.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/dom4j/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/fckeditor-java-2.5/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/fckeditor-java-2.5/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/fckeditor-java-2.5/fckeditor-java-core-2.5.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/fckeditor-java-2.5/imageinfo-1.9.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/fckeditor-java-2.5/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/google-map/googlemaps.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/hibernate3.3.1/required/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/hibernate3.3.1/required/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/hibernate3.3.1/required/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/hibernate3.3.1/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/displaytag-1.2/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/displaytag-1.2/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/displaytag-1.2/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/hibernate3.3.1/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/spring2.5.6/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/spring2.5.6/commons-pool.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/struts2.1.8/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/struts2.1.8/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/jakarta-commons/struts2.1.8/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/mysql/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/slf4j/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/slf4j/slf4j-log4j12-1.5.0.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/spring2.5.6/spring.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/struts2.1.8/freemarker-2.3.15.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/struts2.1.8/ognl-2.7.3.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/struts2.1.8/struts2-core-2.1.8.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/struts2.1.8/struts2-spring-plugin-2.1.8.1.jar"/>
+	<classpathentry kind="lib" path="/lndp-lib/struts2.1.8/xwork-core-2.1.6.jar"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

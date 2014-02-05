@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="lndp" extends="struts-default">
+		<interceptors>
+            <interceptor name="login" class="com.lndp.intercepter.LoginIntercepter" />
+        </interceptors>
+		
+		<global-results>
+           <result name="admin_login">/admin/admin_login.jsp</result>
+           <result name="company_find_all_action" type="redirectAction">company_admin_findAll.action</result>
+           <result name="success">/common/success.jsp</result>
+           <result name="error">/common/error.jsp</result>
+        </global-results>
+		
+		
+        <action name="user_*" method="{1}" class="userinfoAction">
+        	<interceptor-ref name="defaultStack" />
+        	<interceptor-ref name="login" />
+        </action>
+        
+        <action name="securityMgr_*" method="{1}" class="securityMgrAction">
+        	<interceptor-ref name="defaultStack" />
+        	<interceptor-ref name="login" /> 
+        	<result name="input">/admin/admin_login.jsp</result>
+        	<result name="error">/admin/admin_login.jsp</result>
+        </action>
+        
+        <action name="news_admin_*" method="{1}" class="newsAdminAction">
+        	<interceptor-ref name="defaultStack" />
+        	<interceptor-ref name="login" /> 
+            <result name="add_input">/admin/news/news_add.jsp</result>
+            <result name="update_input">/admin/news/news_update.jsp</result>  
+            <result name="success">/common/success.jsp</result>
+            <result name="admin_login">/admin/admin_login.jsp</result>
+            <result name="list">/admin/news/news_list.jsp</result>  
+            <result name="show">/admin/news/news_show.jsp</result>
+            <result name="update">/admin/news/news_update.jsp</result>
+        </action>
+        
+        <action name="company_admin_*" method="{1}" class="companyAdminAction">
+        	<interceptor-ref name="defaultStack" />
+        	<interceptor-ref name="login" /> 
+        	<interceptor-ref name="fileUpload">
+                <param name="allowedTypes">image/bmp,image/x-png,image/gif,image/jpeg</param>
+                <param name="maximumSize">2048000</param>
+            </interceptor-ref>
+            <param name="savePath">/lndp/upload/img/</param> 
+            <result name="add_input">/admin/company/company_add.jsp</result>
+            <result name="update_input">/admin/company/company_update.jsp</result>  
+            <result name="success">/common/success.jsp</result>
+            <result name="admin_login">/admin/admin_login.jsp</result>
+            <result name="list">/admin/company/company_list.jsp</result>  
+            <result name="show">/admin/company/company_show.jsp</result>
+            <result name="update">/admin/company/company_update.jsp</result>
+        </action>
+        
+        <action name="news_*" method="{1}" class="newsAction">
+        	<interceptor-ref name="defaultStack" />
+            <result name="input">/news/news_index.jsp</result>  
+            <result name="success">/common/success.jsp</result>
+            <result name="index">/news/news_index.jsp</result>
+            <result name="list">/news/news_list.jsp</result>
+            <result name="show">/news/news_show.jsp</result>
+        </action>
+        
+        <action name="company_*" method="{1}" class="companyAction">
+            <result name="input">/company/company_list.jsp</result>  
+            <result name="success">/common/success.jsp</result>
+            <result name="list">/company/company_list.jsp</result>
+            <result name="show">/company/company_show.jsp</result>
+        </action>
+        
+        <action name="identifying_code" class="com.lndp.action.IdentifyingAction">  
+	      <result type="stream">  
+	               <param name="contentType">image/jpeg</param>  
+	               <param name="inputName">inputStream</param>  
+	        </result>  
+	 	</action>  
+ 
+        <!--  
+        <action name="file_upload" class="com.lndp.poc.action.UploadAction">
+        	<interceptor-ref name="defaultStack" />
+        	<interceptor-ref name="fileUpload">
+                <param name="allowedTypes">image/bmp,image/x-png,image/gif,image/jpeg</param>
+                <param name="maximumSize">2048000</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+            <param name="savePath">/resource/upload/common/img/</param> 
+            <result name="input">/poc/file_upload.jsp</result>  
+            <result name="success">/poc/file_upload.jsp</result>  
+        </action>
+        
+        <action name="fckeditor" class="com.lndp.poc.action.FCKEditorAction">
+            <result name="input">/poc/fckeditor.jsp</result>  
+            <result name="success">/poc/fckeditor.jsp</result>  
+        </action>
+        -->
+        
+    </package>
+</struts> 
