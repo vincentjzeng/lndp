@@ -3,10 +3,11 @@
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+			+ "/";
 %>
-
+  
 <base href="<%=basePath%>"/>
+
 <!--  
 <script src="resource/ad/js/news.js" language="JavaScript"></script>
 -->
@@ -20,7 +21,6 @@
 				<a href="index.jsp"><img src="images/top_logo.gif" width="250" height="25" /></a>
 			</div>
 			<ul>
-				<li >&nbsp;</li>
 				<li><a href="plaza/plaza_info.jsp">广场概况</a></li>
 				<li><a href="company_findForPage.action">商家名录</a></li>
 				<li><a href="news_findForIndexByType.action?viewType=2">新闻中心</a></li>

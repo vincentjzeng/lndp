@@ -8,7 +8,7 @@
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
+			+ "/";
 %>
 
 <%@ taglib uri="/WEB-INF/googlemaps.tld" prefix="googlemaps" %> 
