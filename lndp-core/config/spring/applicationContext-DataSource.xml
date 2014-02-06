@@ -35,7 +35,7 @@
 			<value>${hibernate.c3p0.idle_test_period}</value>
 		</property>
 		<property name="maxIdleTime">
-			<value>${hibernate.c3p0..max_idle_time}</value>
+			<value>${hibernate.c3p0.max_idle_time}</value>
 		</property> 
 		<property name="checkoutTimeout">
 			<value>${hibernate.c3p0.checkout_timeout}</value>
