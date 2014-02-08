@@ -1,4 +1,4 @@
-1. How to udpate the footer ad
+1. How to update the footer ad
 a. login to http://www.alimama.com/ with vincentellan (Taobal account) and make to ad
 b. Update the ad.properties to the target ad
 c. restart lndp to make the ad taking effect.
