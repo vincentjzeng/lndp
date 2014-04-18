@@ -7,12 +7,12 @@
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
+			    <!-- 
 				<value>classpath:spring/datasource-sina.properties</value>
-				<!-- 
-				<value>classpath:spring/datasource-localhost.properties</value>
 				<value>classpath:spring/datasource-sq_lndigi.properties</value>
 				<value>classpath:spring/datasource-s218.properties</value>
-				 -->
+				-->
+				<value>classpath:spring/datasource-localhost.properties</value>
 				 <value>classpath:spring/ad.properties</value>
 				 <value>classpath:spring/emap.properties</value>
 				 <value>classpath:spring/contact.properties</value>
